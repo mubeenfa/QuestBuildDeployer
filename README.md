@@ -55,6 +55,14 @@ Before using this tool, ensure:
 
 Official CLI reference:[https://developers.meta.com/horizon/resources/publish-reference-platform-command-line-utility/](https://developers.meta.com/horizon/resources/publish-reference-platform-command-line-utility/?utm_source=chatgpt.com)
 
+🖼 App Preview
+-------------
+1.  App running with logs visible
+![App Preview](screenshots/MetaPublisher Logs.png)
+
+2. Successful deployment on Meta Developer Account
+![Deployment UI](screenshots/Meta Developer Acc - Build Uploaded Details.png)
+
 ⚙️ Unity Build Requirements (Quest Store)
 -----------------------------------------
 Your APK must meet Meta requirements:
