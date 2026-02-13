@@ -1,0 +1,67 @@
+﻿<Window x:Class="MetaPublisher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetaPublisher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+    <Grid Margin="0,0,0,-6">
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- App ID -->
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,5">
+                <TextBlock Text="App ID:" Width="150"/>
+                <TextBox x:Name="AppIdBox" Width="400"/>
+            </StackPanel>
+
+            <!-- Token -->
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,5">
+                <TextBlock Text="App Secret:" Width="150"/>
+                <TextBox x:Name="AppSecretBox" Width="400"/>
+            </StackPanel>
+
+            <!-- OVR Platform Util -->
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="0,5">
+                <TextBlock Text="OVR-CLI Path:" Width="150"/>
+                <TextBox x:Name="OVRPathBox" Width="400"/>
+                <Button Content="Browse" Click="CLI_Browse_Click" Margin="5,0"/>
+            </StackPanel>
+
+            <!-- APK -->
+            <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0,5">
+                <TextBlock Text="APK Path:" Width="150"/>
+                <TextBox x:Name="ApkPathBox" Width="400"/>
+                <Button Content="Browse" Click="APK_Browse_Click" Margin="5,0"/>
+            </StackPanel>
+
+            <!-- Channel -->
+            <StackPanel Orientation="Horizontal" Grid.Row="4" Margin="0,5">
+                <TextBlock Text="Channel:" Width="150"/>
+                <ComboBox x:Name="ChannelBox" Width="200">
+                    <ComboBoxItem Content="ALPHA"/>
+                    <ComboBoxItem Content="BETA"/>
+                    <ComboBoxItem Content="RC"/>
+                    <ComboBoxItem Content="LIVE"/>
+                </ComboBox>
+                <Button Content="Deploy" Click="Deploy_Click" Margin="20,0"/>
+            </StackPanel>
+
+            <!-- Logs -->
+            <TextBox x:Name="LogBox"
+                 Grid.Row="5"
+                 Margin="0,10,0,0"
+                 AcceptsReturn="True"
+                 VerticalScrollBarVisibility="Auto"
+                 IsReadOnly="True"/>
+        </Grid>
+    </Grid>
+</Window>
