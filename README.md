@@ -58,10 +58,10 @@ Official CLI reference:[https://developers.meta.com/horizon/resources/publish-re
 🖼 App Preview
 -------------
 1.  App running with logs visible
-![App Preview!](screenshots\MetaPublisher_Logs.png)
+![App Preview!](screenshots/MetaPublisher_Logs.png)
 
 2. Successful deployment on Meta Developer Account
-![Deployment UI!](screenshots\Meta_Developer_Account_Build_Details.png)
+![Deployment UI!](screenshots/Meta_Developer_Account_Build_Details.png)
 
 ⚙️ Unity Build Requirements (Quest Store)
 -----------------------------------------
